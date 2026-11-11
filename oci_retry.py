@@ -29,6 +29,10 @@ RETRY_INTERVAL = 90  # seconds
 #   The workflow auto-creates it from GitHub Secrets — see README.md
 # ────────────────────────────────────────────────────────
 config = oci.config.from_file()
+from pprint import pprint as pp
+print*"==============================================")
+pp(config)
+print*"==============================================")
 
 # Resources are created in the tenancy (root compartment) from the OCI config
 COMPARTMENT_ID = config["tenancy"]
