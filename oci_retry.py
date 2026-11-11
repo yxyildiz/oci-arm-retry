@@ -30,9 +30,9 @@ RETRY_INTERVAL = 90  # seconds
 # ────────────────────────────────────────────────────────
 config = oci.config.from_file()
 from pprint import pprint as pp
-print*"==============================================")
+print("==============================================")
 pp(config)
-print*"==============================================")
+print("==============================================")
 
 # Resources are created in the tenancy (root compartment) from the OCI config
 COMPARTMENT_ID = config["tenancy"]
