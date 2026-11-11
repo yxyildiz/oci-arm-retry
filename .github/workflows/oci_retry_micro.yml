@@ -60,8 +60,6 @@ jobs:
           ssh_public_key_file=/home/runner/.oci/ssh_public_key.pub
           EOF
 
-          ### YY
-          cat  ~/.oci/config
 
       - name: Run OCI retry script
         # Exit 0          → instance created → auto-disable the workflow
