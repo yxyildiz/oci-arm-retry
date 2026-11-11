@@ -96,10 +96,7 @@ def create_vcn_and_subnet():
     vcns = network.list_vcns(
         COMPARTMENT_ID, display_name="retry-vcn", retry_strategy=retry
     ).data
-    ####### YY 
-    vcn="ocid1.vcn.oc1.phx.amaaaaaa6dcykdqaltfkjr4tzufblw5ubxwc7pho2uhsokdpjnfery6aeqwa"
-    return
-    ####### &&
+
     if vcns:
         vcn = vcns[0]
         print(f"Using existing VCN: {vcn.id}")
